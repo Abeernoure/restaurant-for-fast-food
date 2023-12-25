@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scle=1.0">
+    <meta http-equive="x-UA-compatible" content="ie=edge">
+    <title>Fast Food Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+     
+      
+</head>
+<body>
+  <div class="container">
+<nav>
+  
+<a class="logo" href="#">INDIAN FOOD</a>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="../restaurant2/index.html">Services</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+<img src="c:\Users\DELL\Desktop\1913797.png"class="menu-icon">
+</nav>
+<div class="row">
+<div class="col">
+<div class="content">
+    <h5>Fresh And Tasty</h5>
+    <br>
+    <h1><b>Welcome</b> <br>To The Fast Food <br>Restaurant</h1>
+  </div>
+<div class="col"></div>
+<div class="gallery-box">
+  <img src="#" id="gallery-box">
+  <ul>
+<button class="numBtn" onclick="loadPhoto('images/images (13).jpg')">1</button>
+<button class="numBtn" onclick="loadPhoto('images/images (6).jpg')">2</button>
+<button class="numBtn" onclick="loadPhoto('images/images (8).jpg')">3</button>
+<button class="numBtn" onclick="loadPhoto('images/download (4).jpg')">4</button>
+</ul>
+<img id="myImg" src="images/images (13).jpg" alt="Your selected image will appear here" >
+
+
+</div>
+</div>
+</div>
+</div>
+  </div>
+  
+  <script>
+    function loadPhoto(imgPath) {
+       document.getElementById('myImg').src = imgPath;
+   }
+    </script>
+
+
+</body>
+</html>

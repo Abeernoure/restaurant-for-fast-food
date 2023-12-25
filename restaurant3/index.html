@@ -1,0 +1,65 @@
+ 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regester Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+<nav>
+  
+<a class="logo" href="#">INDIAN FOOD</a>
+<ul>
+    <li><a href="../Restaurant/index.html">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="../restaurant2/index.html ">Services</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+<img src="c:\Users\DELL\Desktop\1913797.png"class="menu-icon">
+</nav>
+  
+  <div class="box">
+    <br> 
+    <h3>Enter Your Name :</h3>
+    <br>
+<form >
+    <label>User Name:</label>
+    <br>
+    <input type="text" placeholder="Your Name">
+    <br>
+    <label>Your ID Card :</label>
+    <br>
+    <input type="password" placeholder="Your password">
+    <br>
+     
+</form>
+<button id="enroll-button">Enroll</button>
+
+ <div id="popup" class="hidden">
+    <p>You Will Recieve Your Order In a Few Minutes</p>
+ </div>
+
+<script>
+  document.getElementById('enroll-button').addEventListener('click', function() {
+ simulateProcessingTime();
+});
+
+function simulateProcessingTime() {
+ var popup = document.getElementById('popup');
+ popup.classList.remove('hidden');
+
+ setTimeout(function() {
+    popup.classList.add('hidden');
+ }, 3000); // The popup will be displayed for 3 seconds
+}
+</script>
+
+
+
+</body>
+</html>
